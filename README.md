@@ -74,6 +74,6 @@ talim-platformasi/
 
 **Ismingiz**
 💼 [LinkedIn](https://linkedin.com/in/axadjonovanvar)
-📧 Email: [axadjonov@gmail.com](mailto:axadjonov123@gmail.com)
+📧 Email: [axadjonov123@gmail.com](mailto:axadjonov123@gmail.com)
 
 
