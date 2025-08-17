@@ -1,0 +1,73 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'main/nazariy.style.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Amaliy Mashg‘ulotlar</h1>
+    {% for amaliy in amaliylar %}
+    <div class="card">
+        <div class="card-header" onclick="toggleCard(this)">
+            {{ amaliy.tartib_raqami }}. {{ amaliy.mavzu }}
+            <span class="arrow rotate down">▶</span>
+        </div>
+        <div class="card-body" data-src="{{ amaliy.html_file.url }}" style="display: none;">
+            <p>
+                <a href="{{ amaliy.word_file.url }}" class="download-btn" download>
+                    <i class="fa-solid fa-download"></i> Yuklab olish
+                </a>
+            </p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    function toggleMenu() {
+        document.getElementById("nav-menu").classList.toggle("active");
+    }
+
+    window.addEventListener("load", function () {
+        setTimeout(() => {
+            const loader = document.getElementById("loader");
+            loader.style.opacity = 0;
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 500);
+        }, 1200); // 1.2 soniya kechikish bilan yo'qoladi
+    });
+
+    function toggleCard(header) {
+        const body = header.nextElementSibling;
+        const arrow = header.querySelector('.arrow');
+        const allBodies = document.querySelectorAll('.card-body');
+        const allArrows = document.querySelectorAll('.arrow');
+
+        // Boshqa card-larni yopish
+        allBodies.forEach(b => { if (b !== body) b.style.display = 'none'; });
+        allArrows.forEach(a => { if (a !== arrow) a.classList.add('down'); });
+
+        if (body.style.display === 'block') {
+            body.style.display = 'none';
+            arrow.classList.add('down');
+        } else {
+            body.style.display = 'block';
+            arrow.classList.remove('down');
+
+            // Faqat birinchi marta ochilganda iframe qo‘shish
+            if (!body.querySelector('iframe')) {
+                const iframe = document.createElement('iframe');
+                iframe.src = body.dataset.src;
+                iframe.className = 'responsive-frame';
+                iframe.loading = 'lazy';
+                body.insertBefore(iframe, body.firstChild);
+            }
+        }
+    }
+</script>
+{% endblock %}

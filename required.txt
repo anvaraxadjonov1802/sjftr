@@ -1,0 +1,16 @@
+asgiref==3.9.1
+colorama==0.4.6
+decorator==5.2.1
+Django==4.2.23
+django-range-merge==0.2.6
+imageio==2.37.0
+imageio-ffmpeg==0.6.0
+moviepy==2.2.1
+numpy==2.0.2
+pillow==11.3.0
+proglog==0.1.12
+python-dotenv==1.1.1
+sqlparse==0.5.3
+tqdm==4.67.1
+typing_extensions==4.14.1
+tzdata==2025.2

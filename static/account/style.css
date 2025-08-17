@@ -1,0 +1,398 @@
+/* Reset va asosiy sozlamalar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: black;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+    padding: 20px;
+}
+
+/* Neon blurli fon doiralari */
+.circle1, .circle2, .circle3, .circle4 {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-color: blue;
+    border-radius: 50%;
+    filter: blur(300px);
+    opacity: 0.8;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.circle1 {
+    top: -200px;
+    left: -200px;
+}
+
+.circle2 {
+    top: -200px;
+    right: -200px;
+}
+
+.circle3 {
+    bottom: -200px;
+    right: -200px;
+}
+
+.circle4 {
+    bottom: -200px;
+    left: -200px;
+}
+
+/* Wrapper: illyustratsiya + login yonma-yon */
+.login-wrapper {
+    display: flex;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 0 40px rgba(0, 0, 255, 0.3);
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Illyustratsiya bloki */
+.illustration {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.illustration img {
+    width: 100%;
+    /*max-width: 300px;*/
+    height: auto;
+}
+
+/* Login forma */
+.login-container {
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+    color: white;
+    flex: 1;
+}
+
+.login-container h2 {
+    margin-bottom: 24px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #ccccff;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 255, 0.1);
+    color: white;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    outline: none;
+    background-color: rgba(0, 0, 255, 0.2);
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #0000cc;
+}
+
+.error {
+    color: #ff4c4c;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+/* RESPONSIVE: kichik ekranlarda illyustratsiyani yashirish */
+@media (max-width: 768px) {
+    .login-wrapper {
+        flex-direction: column;
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .illustration {
+        display: none;
+    }
+
+    .login-container {
+        padding: 30px 20px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-group input {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .login-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .login-container h2 {
+        font-size: 20px;
+    }
+}
+
+
+.success-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.success-card {
+    background-color: #ffffff10;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 40px 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    color: white;
+    position: relative;
+}
+
+.check-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.success-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.success-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.success-card .login-btn {
+    padding: 12px 25px;
+    font-size: 15px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.success-card .login-btn:hover {
+    background-color: #0056b3;
+}
+
+.messages-wrapper {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #ffe5e5, #ffcccc);
+    border-left: 5px solid #ff4d4d;
+    color: #800000;
+    padding: 14px 18px;
+    border-radius: 10px;
+    min-width: 280px;
+    max-width: 380px;
+    font-size: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slide-in 0.4s ease;
+    position: relative;
+}
+
+.alert.success {
+    background: linear-gradient(135deg, #e0ffe5, #ccffdd);
+    border-left-color: #28a745;
+    color: #155724;
+}
+
+.alert.info {
+    background: linear-gradient(135deg, #e6f7ff, #ccf5ff);
+    border-left-color: #17a2b8;
+    color: #004085;
+}
+
+.alert.warning {
+    background: linear-gradient(135deg, #fff3cd, #ffeeba);
+    border-left-color: #ffc107;
+    color: #856404;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #888;
+    cursor: pointer;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* LOADER START */
+/* Loader tashqi konteyneri */
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(9, 9, 121, 1) 60%, rgba(13, 13, 13, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.4s ease;
+}
+
+/* Portlash effektli loader */
+.loader {
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
+
+.loader::before,
+.loader::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 48em;
+    height: 48em;
+    background-image: radial-gradient(circle 10px, #FFF 100%, transparent 0),
+    radial-gradient(circle 10px, #FFF 100%, transparent 0),
+    radial-gradient(circle 10px, #FFF 100%, transparent 0),
+    radial-gradient(circle 10px, #FFF 100%, transparent 0),
+    radial-gradient(circle 10px, #FFF 100%, transparent 0),
+    radial-gradient(circle 10px, #FFF 100%, transparent 0),
+    radial-gradient(circle 10px, #FFF 100%, transparent 0),
+    radial-gradient(circle 10px, #FFF 100%, transparent 0);
+    background-position: 0em -18em, 0em 18em, 18em 0em, -18em 0em,
+    13em -13em, -13em -13em, 13em 13em, -13em 13em;
+    background-repeat: no-repeat;
+    font-size: 0.5px;
+    border-radius: 50%;
+    animation: blast 1s ease-in infinite;
+}
+
+.loader::after {
+    font-size: 1px;
+    background: #fff;
+    animation: bounce 1s ease-in infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        font-size: 0.75px
+    }
+
+    50% {
+        font-size: 1.5px
+    }
+}
+
+@keyframes blast {
+
+    0%,
+    40% {
+        font-size: 0.5px;
+    }
+
+    70% {
+        opacity: 1;
+        font-size: 4px;
+    }
+
+    100% {
+        font-size: 6px;
+        opacity: 0;
+    }
+}
+
+/* ENDLOADER*/

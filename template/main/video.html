@@ -1,0 +1,52 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'main/style.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="video_section ">
+    <h2 style="text-align: center; font-size: 2.5rem;">Video Darsliklar</h2>
+    <div class="video">
+        {% for video in videolar %}
+        <div class="video-card">
+            <div class="top"></div>
+            <div class="footer">
+                <h3>{{ video.tartib_raqami }}. {{ video.sarlavha }}</h3>
+                {% if not user.is_authenticated %}
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#authModal">
+                        <button onclick="showAuthModal()">Boshlash</button>
+                    </a>
+                {% else %}
+                    <a href="{{ video.video_url }}" target="_blank">
+                        <button>Boshlash</button>
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    function toggleMenu() {
+        document.getElementById("nav-menu").classList.toggle("active");
+    }
+</script>
+
+<script>
+    window.addEventListener("load", function () {
+        setTimeout(() => {
+            const loader = document.getElementById("loader");
+            loader.style.opacity = 0;
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 500);
+        }, 1200); // 1.2 soniya kechikish bilan yo'qoladi
+    });
+</script>
+{% endblock %}
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="uz">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Savollari</title>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js">
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'images/favicon_io/favicon.ico' %}">
+    <style>
+        :root {
+            --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
+            --color: #32a6ff;
+            --bg-dark: #18181b;
+            --bg-card: #29292c;
+            --text-light: #99999d;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0d0d17;
+            color: var(--white);
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .question {
+            position: relative;
+            background: var(--bg-card);
+            border-radius: 1rem;
+            padding: 20px;
+            overflow: hidden;
+            isolation: isolate;
+        }
+
+        .question::before {
+            content: "";
+            position: absolute;
+            inset: 2px;
+            border-radius: 0.95rem;
+            background: var(--bg-dark);
+            z-index: 1;
+        }
+
+        .question::after {
+            content: "";
+            position: absolute;
+            width: 0.25rem;
+            inset: 1rem auto 1rem 0.75rem;
+            background: var(--gradient);
+            border-radius: 4px;
+            z-index: 3;
+            transition: transform 0.3s ease;
+        }
+
+        .question:hover::after {
+            transform: translateX(0.15rem);
+        }
+
+        .question-content {
+            position: relative;
+            z-index: 5;
+        }
+
+        .question-title {
+            color: var(--color);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .options label {
+            display: block;
+            background: #1f1f22;
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .options input[type="radio"] {
+            display: none;
+        }
+
+        .options input[type="radio"]:checked + span {
+            background: #3d83ff;
+        }
+
+        .options span {
+            display: block;
+            color: var(--white);
+        }
+
+        .submit-btn {
+            background: var(--gradient);
+            color: white;
+            padding: 14px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .back-button {
+            margin-bottom: 20px;
+            display: inline-flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .back-button svg {
+            margin-right: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .question-title {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<a href="javascript:history.back()" class="back-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 24 24">
+        <path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    </svg>
+    Orqaga
+</a>
+
+<form class="container" method="post">
+    <h1 style="display: block">🧪 {{ test.sarlavha }} Testi</h1>
+    {% csrf_token %}
+    {% for savol in savollar %}
+    <div class="question">
+        <div class="question-content">
+            <div class="question-title"> {{ forloop.counter }}. {{ savol.savol_matni }}</div>
+            <div class="options">
+                <label><input type="radio" name="savol_{{ savol.id }}" value="A"
+                              required><span>A) {{ savol.variant_a|safe }}</span></label>
+                <label><input type="radio" name="savol_{{ savol.id }}" value="B"
+                              required><span>B) {{ savol.variant_b|safe }}</span></label>
+                <label><input type="radio" name="savol_{{ savol.id }}" value="C"
+                              required><span>C) {{ savol.variant_c|safe }}</span></label>
+                <label><input type="radio" name="savol_{{ savol.id }}" value="D"
+                              required><span>D) {{ savol.variant_d|safe }}</span></label>
+            </div>
+        </div>
+    </div>
+
+    {% endfor %}
+
+    <!-- Qo‘shimcha savollar shu yerga qo‘shilaveradi -->
+    <button type="submit" class="submit-btn">Testni yakunlash</button>
+</form>
+
+</body>
+</html>

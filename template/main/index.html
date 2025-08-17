@@ -1,0 +1,87 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+<section class="header" style="margin-top: 5vh">
+    <div class="left">
+        <h1 class="cursor typewriter-animation">
+            Geometriya shakllar va o‘lchamlar haqida fan.
+        </h1>
+        <p class="fade-in">
+            Nuqta, to‘g‘ri chiziq, tekislik, burchak va shakllar haqida aniq va
+            tushunarli tushunchalarni bu yerda bosqichma-bosqich o‘rganasiz.
+        </p>
+        <a href="{% url 'nazariy' %}" style="text-decoration: none">
+            <button class="btn-kirish" style="padding:15px 28px">Boshlash</button>
+        </a>
+    </div>
+    <div class="right">
+    </div>
+</section>
+
+<section class="video_section ">
+    <h2>Videolar <i class="fa-solid fa-angles-right"></i></h2>
+    <div class="video">
+        {% for video in videolar|slice:":3" %}
+        <div class="video-card">
+            <div class="top"></div>
+            <div class="footer">
+                <h3>{{video.tartib_raqami}}. {{video.sarlavha}}</h3>
+                {% if not user.is_authenticated %}
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#authModal">
+                        <button onclick="showAuthModal()">Boshlash</button>
+                    </a>
+                {% else %}
+                    <a href="{{ video.video_url }}" target="_blank">
+                        <button>Boshlash</button>
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="video_section ">
+    <h2>Testlar <i class="fa-solid fa-angles-right"></i></h2>
+    <div class="video">
+        {% for test in testlar|slice:":3" %}
+        <div class="video-card">
+            <div class="top test"></div>
+            <div class="footer">
+                <h3>{{ test.tartib_raqami }}. {{test.sarlavha}}</h3>
+                {% if not user.is_authenticated %}
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#authModal">
+                        <button onclick="showAuthModal()">Boshlash</button>
+                    </a>
+                {% else %}
+                    <a href="{% url 'test_detail' test.id  %}" >
+                        <button>Boshlash</button>
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+</section>
+{% endblock %}
+
+
+{% block extra_js %}
+<script>
+    function toggleMenu() {
+        document.getElementById("nav-menu").classList.toggle("active");
+    }
+</script>
+
+<script>
+    window.addEventListener("load", function () {
+        setTimeout(() => {
+            const loader = document.getElementById("loader");
+            loader.style.opacity = 0;
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 500);
+        }, 1200); // 1.2 soniya kechikish bilan yo'qoladi
+    });
+</script>
+{% endblock %}

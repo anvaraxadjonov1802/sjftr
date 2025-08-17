@@ -1,0 +1,826 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Georgia;
+	panose-1:2 4 5 2 5 4 5 2 3 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;}
+h1
+	{mso-style-link:"Заголовок 1 Знак";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Заголовок 2 Знак";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Заголовок 3 Знак";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h4
+	{mso-style-link:"Заголовок 4 Знак";
+	margin-top:4.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;
+	font-style:italic;}
+h5
+	{mso-style-link:"Заголовок 5 Знак";
+	margin-top:4.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h6
+	{mso-style-link:"Заголовок 6 Знак";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#595959;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Заголовок 7 Знак";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#595959;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Заголовок 8 Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#272727;
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Заголовок 9 Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#272727;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Название Знак";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Название Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Название Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Название Знак";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Подзаголовок Знак";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#595959;
+	letter-spacing:.75pt;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{mso-style-link:"Цитата 2 Знак";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;
+	color:#404040;
+	font-style:italic;}
+p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
+	{mso-style-link:"Выделенная цитата Знак";
+	margin-top:18.0pt;
+	margin-right:43.2pt;
+	margin-bottom:18.0pt;
+	margin-left:43.2pt;
+	text-align:center;
+	border:none;
+	padding:0cm;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;
+	color:#2E74B5;
+	font-style:italic;}
+span.MsoIntenseEmphasis
+	{color:#2E74B5;
+	font-style:italic;}
+span.MsoIntenseReference
+	{font-variant:small-caps;
+	color:#2E74B5;
+	letter-spacing:.25pt;
+	font-weight:bold;}
+span.1
+	{mso-style-name:"Заголовок 1 Знак";
+	mso-style-link:"Заголовок 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;}
+span.2
+	{mso-style-name:"Заголовок 2 Знак";
+	mso-style-link:"Заголовок 2";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;}
+span.3
+	{mso-style-name:"Заголовок 3 Знак";
+	mso-style-link:"Заголовок 3";
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;}
+span.4
+	{mso-style-name:"Заголовок 4 Знак";
+	mso-style-link:"Заголовок 4";
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;
+	font-style:italic;}
+span.5
+	{mso-style-name:"Заголовок 5 Знак";
+	mso-style-link:"Заголовок 5";
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;}
+span.6
+	{mso-style-name:"Заголовок 6 Знак";
+	mso-style-link:"Заголовок 6";
+	font-family:"Calibri",sans-serif;
+	color:#595959;
+	font-style:italic;}
+span.7
+	{mso-style-name:"Заголовок 7 Знак";
+	mso-style-link:"Заголовок 7";
+	font-family:"Calibri",sans-serif;
+	color:#595959;}
+span.8
+	{mso-style-name:"Заголовок 8 Знак";
+	mso-style-link:"Заголовок 8";
+	font-family:"Calibri",sans-serif;
+	color:#272727;
+	font-style:italic;}
+span.9
+	{mso-style-name:"Заголовок 9 Знак";
+	mso-style-link:"Заголовок 9";
+	font-family:"Calibri",sans-serif;
+	color:#272727;}
+span.a
+	{mso-style-name:"Название Знак";
+	mso-style-link:Название;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+span.a0
+	{mso-style-name:"Подзаголовок Знак";
+	mso-style-link:Подзаголовок;
+	font-family:"Calibri",sans-serif;
+	color:#595959;
+	letter-spacing:.75pt;}
+span.20
+	{mso-style-name:"Цитата 2 Знак";
+	mso-style-link:"Цитата 2";
+	color:#404040;
+	font-style:italic;}
+span.a1
+	{mso-style-name:"Выделенная цитата Знак";
+	mso-style-link:"Выделенная цитата";
+	color:#2E74B5;
+	font-style:italic;}
+.MsoChpDefault
+	{font-size:14.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=RU link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal><span lang=EN-US>2-kurs Geometriya I semestr</span></p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'><b><span lang=EN-US>10. Fazoda Dekart koordinatalarini kiritish. Ikki
+nuqta orasidagi masofa. Kesma o'rtasining koordinatalari</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'><span lang=EN-US>Fazoda o'zaro perpendikular, </span><span style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;position:relative;
+top:4.5pt'><img width=13 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image001.png"></span><span
+lang=EN-US> nuqtada kesishadigan uchta koordinata o'qini o'tkazamiz va bu
+koordinatalarning har birida musbat yo'nalishni aniqlaymiz (10.1-rasm). Shu
+tartibda tavsiflangan koordinata o'qlarining joylashuviga to'g'ri burchakli
+koordinatalar sistemasi deyiladi.</span></p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=566 valign=top style='width:431.5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+  35.45pt;line-height:normal'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif'><img
+  width=280 height=206 id="Picture 1"
+  src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image002.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=566 valign=top style='width:431.5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+  35.45pt;line-height:normal'><i><span lang=EN-US style='font-size:11.0pt;
+  font-family:"Calibri",sans-serif'>10.1-rasm</span></i></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'><span lang=EN-US>Fazoda </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=12 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image003.png"></span><span
+lang=EN-US> nuqta berilgan bo'lsin. </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=12 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image003.png"></span><span
+lang=EN-US> nuqtadan </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=54 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image004.png"></span><span
+lang=EN-US> va </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=22
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image005.png"></span><span
+lang=EN-US> o'qlariga perpendikularlar to'g'ri chiziqlar o'tkazamiz
+(10.1-rasm). U holda </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=20 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image006.png"></span><span
+lang=EN-US> nuqtaga </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=23
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image007.png"></span><span
+lang=EN-US> o'qda </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=10
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image008.png"></span><span
+lang=EN-US> koordinata, </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=20 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image009.png"></span><span
+lang=EN-US> nuqtaga </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=23
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image010.png"></span><span
+lang=EN-US> o'qda </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=10
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image011.png"></span><span
+lang=EN-US> koordinata, </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=20 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image012.png"></span><span
+lang=EN-US> nuqtaga esa </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=22
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image005.png"></span><span
+lang=EN-US> o'qda </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=10
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image013.png"></span><span
+lang=EN-US> koordinata mos keladi. Aniqlangan uchta </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=28 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image014.png"></span><span
+lang=EN-US> va </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=10
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image013.png"></span><span
+lang=EN-US> sonlarni </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=12
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image003.png"></span><span
+lang=EN-US> nuqtaga mos qo'yamiz. Bu </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=28 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image014.png"></span><span
+lang=EN-US> va </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=10
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image013.png"></span><span
+lang=EN-US> sonlarini </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=12
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image003.png"></span><span
+lang=EN-US> nuqtaning koordinatalari deb ataymiz va </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:5.0pt'><img width=74 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image015.png"></span><span
+lang=EN-US> ko'rinishda yozamiz.</span></p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'><span lang=EN-US>Yuqoridagi usulga o'xshash harakatlar bilan
+tekislikdagi har bir nuqtaga alohida (</span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=46 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image016.png"></span><span
+lang=EN-US>) sonlar uchtalikni mos qo'yish mumkin. Buning aksi ham o'rinli,
+ya'ni har bir sonlar uchtaligiga fazoda faqat bitta nuqta mos keladi.
+Haqiqatan, </span><span lang=EN-US>agar ( </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=46 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image016.png"></span><span
+lang=EN-US> ) sonlar uchtaligi berilgan bo'lsa, </span><span style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;position:relative;
+top:4.5pt'><img width=23 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image007.png"></span><span
+lang=EN-US> o'qda </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=13
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image001.png"></span><span
+lang=EN-US> nuqtadan, </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=10
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image008.png"></span><span
+lang=EN-US> ning ishorasiga bog'liq holda, musbat yoki manfiy yo'nalishda
+uzunligi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=22 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image017.png"></span><span
+lang=EN-US> bo'lgan kesmani joylashtiramiz. Oy o'qda uzunligi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=22 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image018.png"></span><span
+lang=EN-US> bo'lgan kesmani, </span><span style='font-size:14.0pt;line-height:
+107%;font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img
+width=22 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image005.png"></span><span
+lang=EN-US> o'qda esa uzunligi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=21 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image019.png"></span><span
+lang=EN-US> bo'lgan kesmani joylashtiramiz. So'ngra bu kesmalarning oxiridan,
+mos ravishda, </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=54 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image004.png"></span><span
+lang=EN-US> va </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=22
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image005.png"></span><span
+lang=EN-US> o'qlarga perpendikularlar o'tkazamiz va ularning kesishish nuqtasi
+koordinatalari ( </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=46 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image016.png"></span><span
+lang=EN-US> ) bo'lgan nuqtadan iborat bo'ladi.</span></p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'><span lang=EN-US>Bunda </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=10 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image008.png"></span><span
+lang=EN-US> koordinata nuqtaning abssissasi, </span><span style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;position:relative;
+top:4.5pt'><img width=10 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image011.png"></span><span
+lang=EN-US> koordinata esa ordinatasi, </span><span style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;position:relative;
+top:4.5pt'><img width=10 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image013.png"></span><span
+lang=EN-US> koordinatasi oplikatasi deyiladi. Mos ravishda, Oxo'q-abssissa o' </span><span style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;position:relative;
+top:4.5pt'><img width=17 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image020.png"></span><span
+lang=EN-US>, Oy o'q esa ordinata o'qi, Oz o'q esa oplikata o'qi deyiladi.
+Koordinata o'qlarining kesishish nuqtasi </span><span style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;position:relative;
+top:4.5pt'><img width=13 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image001.png"></span><span
+lang=EN-US> - to'g'ri burchakli koordinatalar sistemasining boshi deyiladi va
+unga to'g'ri burchakli Dekart koordinatalar sistemasi deyiladi.</span></p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'><span lang=EN-US>Agar fazoda berilgan </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=20 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image006.png"></span><span
+lang=EN-US> nuqta </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=23
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image007.png"></span><span
+lang=EN-US> o'qda yotsa, uning koordinatalari </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:5.0pt'><img width=82 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image021.png"></span><span
+lang=EN-US> bo'ladi. Agar </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=20 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image009.png"></span><span
+lang=EN-US> nuqta </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=23
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image010.png"></span><span
+lang=EN-US> o'qda yotsa, uning koordinatalari </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:5.0pt'><img width=83 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image022.png"></span><span
+lang=EN-US> bo'ladi. Agar </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=20 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image012.png"></span><span
+lang=EN-US> nuqta </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=22
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image005.png"></span><span
+lang=EN-US> o'qda yotsa, uning koordinatalari </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:5.0pt'><img width=82 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image023.png"></span><span
+lang=EN-US> bo'ladi. Agar </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=20 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image024.png"></span><span
+lang=EN-US> nuqta xOz tekisligida yotsa, uning koordinatalari </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:5.0pt'><img width=82 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image025.png"></span><span
+lang=EN-US> bo'ladi. Agar </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=20 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image026.png"></span><span
+lang=EN-US> nuqta </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=33
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image027.png"></span><span
+lang=EN-US> tekisligida yotsa, uning koordinatalari </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:5.0pt'><img width=82 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image028.png"></span><span
+lang=EN-US> bo'ladi. Agar </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=20 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image029.png"></span><span
+lang=EN-US> nuqta </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=34
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image030.png"></span><span
+lang=EN-US> tekisligida yotsa, uning koordinatalari </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:5.0pt'><img width=82 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image031.png"></span><span
+lang=EN-US> bo'ladi. Koordinatalar boshi bo&quot;lgan </span><span style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;position:relative;
+top:4.5pt'><img width=13 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image001.png"></span><span
+lang=EN-US> nuqtaning koordinatalari </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:5.0pt'><img width=76 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image032.png"></span><span
+lang=EN-US> bo'ladi (10.1-rasm).</span></p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'><span lang=EN-US>Fazoda ikki nuqta orasidagi masofa va kesmani
+berilgan nisbatda bo'lish formulalari biz planimetriyada o'rgangan kabi
+bo'ladi.</span></p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=98 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image033.png"></span><span
+lang=EN-US> va </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=103 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image034.png"></span><span
+lang=EN-US> nuqtalar orasidagi masofa quyidagiga teng bo'ladi:</span></p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif'><img
+width=486 height=74
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image035.png"></span></p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'><span lang=EN-US>koordinatalari quyidagi formula yordamida aniqlanadi:</span></p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif'><img
+width=363 height=45
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image036.png"></span></p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'><span lang=EN-US>Xususan, </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=45 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image037.png"></span><span
+lang=EN-US> bo'lganda </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=100 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image038.png"></span><span
+lang=EN-US> nuqta </span><span style='font-size:14.0pt;line-height:107%;
+font-family:"Times New Roman",serif;position:relative;top:4.5pt'><img width=25
+height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image039.png"></span><span
+lang=EN-US> kesmaning o'rtasi bo'ladi va u quyidagicha:</span></p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif'><img
+width=334 height=42
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image040.png"></span></p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'>1-masala. <span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:5.0pt'><img width=74 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image041.png"></span> nuqta
+berilgan. Bu nuqtadan koordinata o'qlarigacha bo'lgan masofalarni va koordinata
+tekisliklariga tushirilgan perpendikularlar asoslarini toping.</p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'>Yechish.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:36.0pt;text-align:justify;text-indent:35.45pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>a) <span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:5.0pt'><img width=325 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image042.png"></span>;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:36.0pt;text-align:justify;text-indent:35.45pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>b) <span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:6.0pt'><img width=327 height=26
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image043.png"></span>;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:36.0pt;text-align:justify;text-indent:35.45pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>d) <span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:5.0pt'><img width=323 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image044.png"></span>.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:36.0pt;text-align:justify;text-indent:35.45pt'><span lang=EN-US>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>a) </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:6.0pt'><img width=301 height=26
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image045.png"></span><span
+lang=EN-US>;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:36.0pt;text-align:justify;text-indent:35.45pt'><span lang=EN-US>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>b) </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:5.0pt'><img width=299 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image046.png"></span><span
+lang=EN-US>;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:36.0pt;text-align:justify;text-indent:35.45pt'><span lang=EN-US>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>d) </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:6.0pt'><img width=299 height=26
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image047.png"></span><span
+lang=EN-US>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'><span lang=EN-US>2-masala. </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:5.0pt'><img width=74 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image041.png"></span><span
+lang=EN-US> nuqtadan: 1) koordinata tekisliklarigacha; 2) koordinata
+o'qlarigacha; 3) koordinata boshigacha bo'lgan masofalarni toping.</span></p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'>Yechish.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:36.0pt;text-align:justify;text-indent:35.45pt'><span lang=EN-US>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>a) </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:6.0pt'><img width=303 height=26
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image048.png"></span><span
+lang=EN-US>,</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:36.0pt;text-align:justify;text-indent:35.45pt'><span
+lang=EN-US> ) bo'lsin. Parallelogrammning diagonallari kesishish nuqtasida teng
+ikkiga bo'linishini bilamiz. Kesmaning o'rtasini topish formulasidan: </span><m:oMath><i><span
+ style='font-family:"Cambria Math",serif'><m:r>AC</m:r></span></i></m:oMath><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=24 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image071.png"></span><span
+lang=EN-US> va </span><m:oMath><i><span style='font-family:"Cambria Math",serif'><m:r>BD</m:r></span></i></m:oMath><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=26 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image073.png"></span><span
+lang=EN-US> diagonallar o'rtasining koordinatalarini tenglashtirsak:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'><m:oMathPara><m:oMath><m:f><m:fPr><span style='font-family:"Cambria Math",serif'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i><span
+    style='font-family:"Cambria Math",serif'><m:r>x</m:r></span></i><span
+    style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+       m:val="p"/></m:rPr>+0</m:r></span></m:num><m:den><span style='font-family:
+    "Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty m:val="p"/></m:rPr>2</m:r></span></m:den></m:f><span
+  style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+     m:val="p"/></m:rPr>=</m:r></span><m:f><m:fPr><span style='font-family:
+    "Cambria Math",serif'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><span
+    style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+       m:val="p"/></m:rPr>2+4</m:r></span></m:num><m:den><span
+    style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+       m:val="p"/></m:rPr>2</m:r></span></m:den></m:f><span style='font-family:
+  "Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty m:val="p"/></m:rPr>,
+   </m:r></span><m:f><m:fPr><span style='font-family:"Cambria Math",serif'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i><span
+    style='font-family:"Cambria Math",serif'><m:r>y</m:r></span></i><span
+    style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+       m:val="p"/></m:rPr>+2</m:r></span></m:num><m:den><span style='font-family:
+    "Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty m:val="p"/></m:rPr>2</m:r></span></m:den></m:f><span
+  style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+     m:val="p"/></m:rPr>=</m:r></span><m:f><m:fPr><span style='font-family:
+    "Cambria Math",serif'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><span
+    style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+       m:val="p"/></m:rPr>3+1</m:r></span></m:num><m:den><span
+    style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+       m:val="p"/></m:rPr>2</m:r></span></m:den></m:f><span style='font-family:
+  "Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty m:val="p"/></m:rPr>,
+   </m:r></span><m:f><m:fPr><span style='font-family:"Cambria Math",serif'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><i><span
+    style='font-family:"Cambria Math",serif'><m:r>z</m:r></span></i><span
+    style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+       m:val="p"/></m:rPr>+4</m:r></span></m:num><m:den><span style='font-family:
+    "Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty m:val="p"/></m:rPr>2</m:r></span></m:den></m:f><span
+  style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+     m:val="p"/></m:rPr>=</m:r></span><m:f><m:fPr><span style='font-family:
+    "Cambria Math",serif'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><span
+    style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+       m:val="p"/></m:rPr>2+0</m:r></span></m:num><m:den><span
+    style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+       m:val="p"/></m:rPr>2</m:r></span></m:den></m:f><span style='font-family:
+  "Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty m:val="p"/></m:rPr>.</m:r></span></m:oMath></m:oMathPara><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif'><img
+width=354 height=44
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image081.png"></span></p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'><span lang=EN-US>Bundan </span><m:oMath><i><span style='font-family:
+ "Cambria Math",serif'><m:r>x</m:r></span></i><span lang=EN-US
+ style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+    m:val="p"/></m:rPr>=6, </m:r></span><i><span style='font-family:"Cambria Math",serif'><m:r>y</m:r></span></i><span
+ lang=EN-US style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+    m:val="p"/></m:rPr>=2, </m:r></span><i><span style='font-family:"Cambria Math",serif'><m:r>z</m:r></span></i><span
+ lang=EN-US style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+    m:val="p"/></m:rPr>=-2ni</m:r></span></m:oMath><span style='font-size:14.0pt;
+line-height:107%;font-family:"Times New Roman",serif;position:relative;
+top:4.5pt'><img width=178 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image082.png"></span><span
+lang=EN-US> topamiz.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'><span lang=EN-US>Demak, </span><m:oMath><i><span style='font-family:
+ "Cambria Math",serif'><m:r>D</m:r></span></i><span lang=EN-US
+ style='font-family:"Cambria Math",serif'><m:r><m:rPr><m:scr m:val="roman"/><m:sty
+    m:val="p"/></m:rPr>(6;2;-2)</m:r></span></m:oMath><span style='font-size:
+14.0pt;line-height:107%;font-family:"Times New Roman",serif;position:relative;
+top:5.0pt'><img width=90 height=24
+src="1.%20Fazoda%20Dekart%20koordinatalarini%20kiritish.%20Ikki%20nuqta%20orasidagi%20masofa.%20Kesma%20o'rtasin.files/image083.png"></span><span
+lang=EN-US>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:11.0pt;text-align:justify;text-indent:
+35.45pt'><span lang=EN-US>Mustaqil ishlash uchun masalalar<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

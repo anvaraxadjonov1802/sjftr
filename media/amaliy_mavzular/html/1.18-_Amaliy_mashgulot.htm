@@ -1,0 +1,839 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:Georgia;
+	panose-1:2 4 5 2 5 4 5 2 3 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;}
+h1
+	{mso-style-link:"Заголовок 1 Знак";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Заголовок 2 Знак";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Заголовок 3 Знак";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h4
+	{mso-style-link:"Заголовок 4 Знак";
+	margin-top:4.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;
+	font-style:italic;}
+h5
+	{mso-style-link:"Заголовок 5 Знак";
+	margin-top:4.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h6
+	{mso-style-link:"Заголовок 6 Знак";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#595959;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Заголовок 7 Знак";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#595959;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Заголовок 8 Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#272727;
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Заголовок 9 Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#272727;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Название Знак";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Название Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Название Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Название Знак";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Подзаголовок Знак";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#595959;
+	letter-spacing:.75pt;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{mso-style-link:"Цитата 2 Знак";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;
+	color:#404040;
+	font-style:italic;}
+p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
+	{mso-style-link:"Выделенная цитата Знак";
+	margin-top:18.0pt;
+	margin-right:43.2pt;
+	margin-bottom:18.0pt;
+	margin-left:43.2pt;
+	text-align:center;
+	border:none;
+	padding:0cm;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;
+	color:#2E74B5;
+	font-style:italic;}
+span.MsoIntenseEmphasis
+	{color:#2E74B5;
+	font-style:italic;}
+span.MsoIntenseReference
+	{font-variant:small-caps;
+	color:#2E74B5;
+	letter-spacing:.25pt;
+	font-weight:bold;}
+span.1
+	{mso-style-name:"Заголовок 1 Знак";
+	mso-style-link:"Заголовок 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;}
+span.2
+	{mso-style-name:"Заголовок 2 Знак";
+	mso-style-link:"Заголовок 2";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;}
+span.3
+	{mso-style-name:"Заголовок 3 Знак";
+	mso-style-link:"Заголовок 3";
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;}
+span.4
+	{mso-style-name:"Заголовок 4 Знак";
+	mso-style-link:"Заголовок 4";
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;
+	font-style:italic;}
+span.5
+	{mso-style-name:"Заголовок 5 Знак";
+	mso-style-link:"Заголовок 5";
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;}
+span.6
+	{mso-style-name:"Заголовок 6 Знак";
+	mso-style-link:"Заголовок 6";
+	font-family:"Calibri",sans-serif;
+	color:#595959;
+	font-style:italic;}
+span.7
+	{mso-style-name:"Заголовок 7 Знак";
+	mso-style-link:"Заголовок 7";
+	font-family:"Calibri",sans-serif;
+	color:#595959;}
+span.8
+	{mso-style-name:"Заголовок 8 Знак";
+	mso-style-link:"Заголовок 8";
+	font-family:"Calibri",sans-serif;
+	color:#272727;
+	font-style:italic;}
+span.9
+	{mso-style-name:"Заголовок 9 Знак";
+	mso-style-link:"Заголовок 9";
+	font-family:"Calibri",sans-serif;
+	color:#272727;}
+span.a
+	{mso-style-name:"Название Знак";
+	mso-style-link:Название;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+span.a0
+	{mso-style-name:"Подзаголовок Знак";
+	mso-style-link:Подзаголовок;
+	font-family:"Calibri",sans-serif;
+	color:#595959;
+	letter-spacing:.75pt;}
+span.20
+	{mso-style-name:"Цитата 2 Знак";
+	mso-style-link:"Цитата 2";
+	color:#404040;
+	font-style:italic;}
+span.a1
+	{mso-style-name:"Выделенная цитата Знак";
+	mso-style-link:"Выделенная цитата";
+	color:#2E74B5;
+	font-style:italic;}
+span.VerbatimChar
+	{mso-style-name:"Verbatim Char";
+	font-family:Consolas;}
+.MsoChpDefault
+	{font-size:14.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=RU>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><b><span lang=EN-US
+style='line-height:150%'>13. Piramida va kesik piramidaning hajmi</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><b><span lang=EN-US
+style='line-height:150%'>Mustaqil ishlash uchun masalalar</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.34. To‘rtburchakli piramidaning asosi. Tomoni
+uzunligi 3 ga va o‘tkir burchagi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image001.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng rombdan iborat. Agar piramidaning balandligi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=22 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image002.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng bo‘lsa, bu piramidaning hajmini toping.
+javob:3</span><span lang=EN-US style='line-height:150%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.35. Uchburchakli piramidaning asosi to'g'ri
+burchakli uchburchakdan iborat bo‘lib, bu uchburchakning kichik kateti 3 ga va
+bitta o‘tkir burchagi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image003.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng. Agar piramidaning balandligi asosining
+gipotenuzasi uzunligiga teng bo'lsa, piramidaning hajmini toping. javob:3 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.36. Tetraedrning qirrasi uzunligi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=33 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image004.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng bo'lsa, uning hajmini toping. javob:9 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.37. Muntazam piramidaning hajmi 171 ga teng. Boshqa
+bir muntazam piramidaning balandligi ushbu piramida balandligiga teng, asos
+tomoni uzunligi esa 3 marta kichik bo‘lsa, ikkinchi piramidaning hajmini
+toping. javob: 19</span><span lang=EN-US style='line-height:150%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.38. Uchburchakli piramidaning asosi gipotenuzasi 8
+ga va o'tkir burchagi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image001.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng to 'g'ri burchakli uchburchakdan iborat. Agar
+piramidaning balandligi 3 ga teng bo‘lsa, uning hajmini toping. javob: 16</span><span
+lang=EN-US style='line-height:150%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.39. To`rtburchakli muntazam piramidaning barcha
+qirralari uzunliklari </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=33 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image004.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng bo‘lsa, uning hajmini toping. javob: 18</span><span
+lang=EN-US style='line-height:150%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.40. Uchburchakli muntazam piramidaning balandligi
+va asos tomoni uzunligi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=24 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image005.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng. Piramidaning hajmini toping. javob: 0,25</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.41. Uchburchakli muntazam kesik piramidaning asos
+tomonlari uzunligi 12 va 4 ga teng. Agar piramidaning balandligi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=22 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image006.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng bo'lsa, uning hajmini toping. javob: 52 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.42. Uchburchakli muntazam kesik piramidaning asos
+tomonlari uzunliklari 3 va 1 ga teng. Agar bu piramidaning balandligi 3 ga teng
+bo'lsa, uning hajmini toping. javob: </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:8.5pt'><img width=32 height=37
+src="1.18-%20Amaliy%20mashg'ulot.files/image007.png"></span><span
+style='line-height:150%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.43. Uchburchakli kesik piramidaning asosi teng
+yonli to'g'ri burchakli uchburchakdan iborat. Bu uchburchaklarining
+gipotenuzasi uzunligi 7 va 5 ga teng. Agar piramidaning balandligi 12 ga teng
+bo‘lsa, uning hajmini toping. javob: 109</span><span lang=EN-US
+style='line-height:150%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.44. Uchburchakli kesik piramidaning asosi to'g'ri
+burchakli uchburchakdan iborat bo‘lib, bu uchburchakning o‘tkir burchagi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image003.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng va gipotenuzalari uzunligi esa 6 va 4 ga
+teng. Agar u piramidaning balandligi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=22 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image006.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng bo‘lsa, uning hajmini toping. javob: 9,5</span><span
+lang=EN-US style='line-height:150%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.45. Kesik piramidaning asosi tomoni rombdan iborat,
+romblarning tomonlari uzunliklari 6 va 4 ga teng. O'tkir burchagi esa </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image008.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng. Agar piramidaning balandligi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:8.5pt'><img width=17 height=37
+src="1.18-%20Amaliy%20mashg'ulot.files/image009.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng bo'lsa, uning hajmini toping. javob: 37 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.46. Kesik piramidaning asoslari teng yonli
+uchburchakdan iborat bo‘lib, bu uchburchaklarning uchidagi burchagi esa </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=38 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image010.png"></span><span
+style='line-height:150%'> <span lang=EN-US>ga teng. Uchburchaklarning yon
+tomonlari uzunliklari esa 12 va 5 ga teng. Agar piramidaning balandligi </span></span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:10.0pt'><img width=24 height=34
+src="1.18-%20Amaliy%20mashg'ulot.files/image011.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng bo‘lsa, uning hajmini toping. javob:229/84</span><span
+lang=EN-US style='line-height:150%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.47. Oltiburchakli muntazam kesik piramidaning asosi
+tomonlari uzunliklari 4 va 2 ga teng. Agar piramidaning balandligi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:10.0pt'><img width=17 height=34
+src="1.18-%20Amaliy%20mashg'ulot.files/image012.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng bo‘lsa, uning hajmini toping. javob: 14</span><span
+lang=EN-US style='line-height:150%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.48. Uchburchakli kesik piramidaning asosi teng
+yonli uchidagi burchagi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image008.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng bo'lgan uchburchakdan iborat. Asosidagi teng
+yonli uchburchakning asosiga tushirilgan balandliklari 3 va 4 ga teng. Bu
+piramidaning balandligi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=43 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image013.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng bo'lsa, uning hajmini toping. javob: 185 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.49. Piramidaning hajmi 120 ga teng. Asosiga
+parallel tekislik piramidaning balandligini teng ikkiga bo‘ladi. Hosil bo‘lgan
+kesik piramidaning hajmini toping. javob: 105</span><span lang=EN-US
+style='line-height:150%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.50. Uchburchakli muntazam piramidaning asosi tomoni
+uzunligi 6 ga teng, asosidagi ikki yoqli burchagi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image001.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng. Bu piramidaning hajmini toping. javob: 9 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.51. Piramidaning uchidagi barcha yassi burchaklari
+to'g'ri burchak va piramidaning balandligi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=22 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image006.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng bo'lsa, piramidaning hajmini toping. javob:
+4,5 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.52. Uchburchakli muntazam piramidaning yon qirrasi
+uzunligi 4 ga teng va asos tekisligi bilan </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image008.png"></span><span lang=EN-US
+style='line-height:150%'> burchak tashkil qiladi. Piramidaning hajmini toping.
+javob:6 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.53. To'rtburchakli muntazam piramidaning asosi
+tomoni </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=22 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image006.png"></span><span lang=EN-US
+style='line-height:150%'> ga va asosidagi ikki yoqli burchagi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image008.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng bo‘lsa, uning hajmini toping. javob: 1,5</span><span
+lang=EN-US style='line-height:150%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.54. To'rtburchakli muntazam piramida asosining
+diagonali piramidaning yon qirrasi uzunligiga teng va ularning uzunligi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=22 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image006.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng bo'lsa, uning hajmini toping. javob: 0,75 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.55. To‘rtburchakli muntazam piramidaning yon
+qirrasi asos tekisligi bilan 45° ga teng burchak hosil qiladi. Diagonal kesimi
+36 ga teng bo‘lsa, bu piramidaning hajmini toping. javob: 144 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.56. To‘rtburchakli muntazam piramidaning asosi
+tomoni uzunligi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=34 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image014.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng. Agar diagonal kesimi yuzi asos yuziga teng
+bo‘lsa, piramidaning hajmini toping. javob: </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=43 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image015.png"></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.57. To‘rtburchakli muntazam kesik piramidaning
+asosi diagonallari 8 va 5 ga teng. Yon qirralari asos tekisligi bilan 45° ga
+teng burchak tashkil qiladi. Kesik piramidaning hajmini toping. javob: 32,25</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.58. To<span class=VerbatimChar><span
+style='line-height:150%;font-family:"Times New Roman",serif;background:#F8F8FA'>rtburchakli
+muntazam kesik piramidaning diagonali 18 ga teng, asosining tomoni uzunliklari
+14 va 10 ga teng. Bu kesik piramidaning hajmini toping. javob:872</span></span></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%;background:#F8F8FA'>13.59. To‘rtburchakli muntazam
+kesik piramidaning asosi tomonlari </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=33 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image016.png"></span><span lang=EN-US
+style='line-height:150%;background:#F8F8FA'>  va </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=22 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image017.png"></span><span lang=EN-US
+style='line-height:150%;background:#F8F8FA'> ga teng, yon yog‘ining asos
+tekisligi bilan hosil qilgan burchagi 60° ga teng bo‘lsa, bu piramidaning
+hajmini toping. javob: 42 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%;background:#F8F8FA'>13.60. To‘rtburchakli muntazam
+kesik piramida asosining yuzlari 1 va 4 ga va hajmi 21 ga teng bo‘lsa, to‘la
+piramidaning hajmini toping. javob: 24 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%;background:#F8F8FA'>13.61. To‘rtburchakli kesik
+piramidaning asoslari tomonlari uzunliklari 1 va 3 ga teng. Piramidaning yon
+sirti piramidaning to‘la sirti yuzining yarmiga teng. Bu kesik piramidaning
+hajmini toping. javob: 3,25</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.62. To‘rtburchakli muntazam kesik piramidaning
+balandligi 3 ga va katta asosining tomoni uzunligi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=33 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image018.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng, yon qirrasi asos tekisligi bilan </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image001.png"></span><span lang=EN-US
+style='line-height:150%'> burchak hosil qiladi. Kesik piramidaning hajmini
+toping. javob: 342 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.63. To‘rtburchakli muntazam kesik piramidaning
+katta asosi yuzi 16 ga va yon qirrasining uzunligi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:5.5pt'><img width=38 height=29
+src="1.18-%20Amaliy%20mashg'ulot.files/image019.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng. Piramidaning balandligi 3 ga teng. Kesik
+piramidaning hajmini toping. javob: 37 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.64. Piramidaning yon qirrasi asos tekisligiga </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image003.png"></span><span lang=EN-US
+style='line-height:150%'> burchak ostida og'gan. Piramidaning asosi
+uchburchakdan iborat bo‘lib, tomonlari uzunliklari </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=40 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image020.png"></span><span lang=EN-US
+style='line-height:150%'> va 3 ga teng. Piramidaning hajmini toping. javob: 0,5
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.65. Piramidaning asosi rombdan iborat bo'lib, bu
+rombning o'tkir burchagi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image008.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng. Yon yoqlari asos tekisligi bilan </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image008.png"></span><span lang=EN-US
+style='line-height:150%'> ga og'gan holda joylashgan. Agar asosiga ichki
+chizilgan aylananing radiusi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=24 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image005.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng bo'lsa, piramidaning hajmini aniqlang.
+javob:8 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.66. Piramidaning asosi teng yonli uchburchakdan
+iborat bo'lib, bu uchburchakning asosi 6 ga va asosiga tushgan balandligi 9 ga
+teng. Barcha yon qirralari 13 ga teng bo'lsa, bu piramidaning hajmini toping.
+javob: 108 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.67. Piramidaning asosi to'g'ri burchakli
+uchburchakdan iborat bo'lib, gipotenuzasi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=33 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image021.png"></span><span lang=EN-US
+style='line-height:150%'> ga va o'tkir burchagi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image003.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng. Piramidaning yon qirrasi asos tekisligi
+bilan </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image001.png"></span><span lang=EN-US
+style='line-height:150%'> burchak hosil qiladi. Bu piramidaning hajmini toping.
+javob: 1,5 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.68. To‘rtburchakli piramidaning asosi diagonallari </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=33 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image021.png"></span><span lang=EN-US
+style='line-height:150%'> ga va diagonallari orasidagi burchagi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image008.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng. Barcha yon qirralari asos tekisligi bilan </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image001.png"></span><span lang=EN-US
+style='line-height:150%'> hosil qiladi. Bu piramidaning hajmini toping. javob:
+3 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.69. Piramidaning asosi uchburchakdan iborat bo‘lib,
+tomonlari uzunliklari </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=40 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image022.png"></span><span lang=EN-US
+style='line-height:150%'> va 2 ga teng. Yon qirrasi asos tekisligi bilan </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image008.png"></span><span lang=EN-US
+style='line-height:150%'> burchak tashkil qiladi. Piramidaning hajmini toping.
+javob:1 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.70. Piramidaning asosi to'g'ri burchakli
+uchburchakdan iborat. Uchburchak katetlaridagi yon yoqlari asos tekisligi bilan
+</span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image003.png"></span><span lang=EN-US
+style='line-height:150%'> va </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image008.png"></span><span lang=EN-US
+style='line-height:150%'> li burchak hosil qiladi. Bu piramidaning barcha
+qirralari teng. Agar piramidaning balandligi 3 ga teng bo'lsa, uning hajmini
+toping. javob: 18 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.71. Piramidaning asosi tomoni 5,6 va 5 ga teng
+uchburchakdan iborat. Yon yoqlari asos tekisligi bilan </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image001.png"></span><span lang=EN-US
+style='line-height:150%'> burchak tashkil qiladi. Piramidaning hajmini toping.
+javob:6 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.72. To'rtburchakli piramidaning asosi to'g'ri
+to'rtburchakdan iborat bo'lib, asosining yuzi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=33 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image023.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng. Piramidaning barcha qirralari teng va asos
+tekisligi bilan </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image001.png"></span><span lang=EN-US
+style='line-height:150%'> burchak tashkil qiladi. Asosining diagonallari
+orasidagi burchagi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image008.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng. Piramidaning hajmini toping. javob: 3 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.73. To'rtburchakli muntazam piramidaning balandligi
+6 ga teng, ikkita qo'shni yon yoqlari orasidagi burchak esa </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image008.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng bo'lsa, piramidaning hajmini toping.
+javob:144 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.74. To'rtburchakli muntazam piramidaning barcha qirralari
+</span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=22 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image002.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng. Bu piramidaning hajmini toping. javob: </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:8.5pt'><img width=8 height=34
+src="1.18-%20Amaliy%20mashg'ulot.files/image024.png"></span><span
+style='line-height:150%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.75. Uchburchakli muntazam piramidaning yon qirrasi
+asos tekisligi bilan </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.18-%20Amaliy%20mashg'ulot.files/image001.png"></span><span lang=EN-US
+style='line-height:150%'> burchak hosil qiladi va asosining balandligi uzunligi
+</span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=33 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image025.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng. Bu piramidaning hajmini toping. javob: 72 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.76. To‘rtburchakli muntazam piramidaning asosi
+markazidan yon yog'igacha bo'lgan masofa 4 ga teng, yon qirrasi esa 3 ga teng.
+Bu piramidaning hajmini toping. javob: 9</span><span lang=EN-US
+style='line-height:150%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span lang=EN-US
+style='line-height:150%'>13.77. To`rtburchakli muntazam piramidaning asosiga
+parallel tekislik uning hajmini teng ikkiga bo‘ladi. Agar piramidaning
+balandligi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=24 height=26
+src="1.18-%20Amaliy%20mashg'ulot.files/image026.png"></span><span lang=EN-US
+style='line-height:150%'> ga teng bo‘lsa, bu tekislik piramida uchidan qanday
+masofada o'tkazilingan? javob:1</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:150%'><span
+lang=EN-US>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

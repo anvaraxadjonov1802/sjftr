@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uz">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirish</title>
+    <link rel="stylesheet" href="{% static 'account/style.css' %}">
+    <link rel="icon" href="{% static 'images/favicon_io/favicon.ico' %}">
+    <style>
+        hr {
+            border: none;
+            border-top: 3px double #fff;
+            color: #FFFFFF;
+            overflow: visible;
+            text-align: center;
+            height: 5px;
+
+        }
+
+        hr::after {
+            color: #FFFFFF;
+            background: rgba(255, 255, 255, 0);
+            content: "∎";
+            padding: 0 4px;
+            position: relative;
+            top: -13px;
+        }
+
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+<div class="loader-wrapper" id="loader">
+    <span class="loader"></span>
+</div>
+<!-- Loader tugashi -->
+<div class="circle1"></div>
+<div class="circle2"></div>
+<div class="circle3"></div>
+<div class="circle4"></div>
+
+{% if messages %}
+<div class="messages-wrapper">
+    {% for message in messages %}
+    <div class="alert {{ message.tags }}">
+        <span class="icon">⚠️</span>
+        <span class="text">{{ message }}</span>
+        <button class="close-btn" onclick="this.parentElement.style.display='none';">&times;</button>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+<div class="login-wrapper">
+    <div class="illustration">
+        <img src="{% static 'account/images/login_bg.png' %}" alt="Illyustratsiya">
+    </div>
+
+    <div class="login-container">
+        <h2>Kirish</h2>
+
+        {% if form.errors %}
+        <div class="error">Email yoki parol noto‘g‘ri!</div>
+        {% endif %}
+
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="id_username">Email</label>
+                <input type="text" name="email" id="id_username" required>
+            </div>
+            <div class="form-group">
+                <label for="id_password">Parol</label>
+                <input type="password" name="password" id="id_password" required>
+            </div>
+
+
+            <button class="login-btn" type="submit">Kirish</button>
+
+            <hr class="hr-circle" style="margin: auto; margin-top: 20px; margin-bottom: 10px; width: 80%; ">
+            <div style="text-align: center; margin-bottom: 10px;">
+                <a href="{% url 'forgot_password' %}" style="font-size: 14px; color: #3b82f6;">Parolni unutdingizmi?</a>
+            </div>
+            <div style="text-align: center; margin-bottom: 10px;">Ro'yxatdan o'tish uchun
+                <a href="{% url 'register' %}" style="font-size: 14px; color: #3b82f6;">havola</a>
+            </div>
+
+        </form>
+    </div>
+</div>
+<script>
+    window.addEventListener("load", function () {
+        setTimeout(() => {
+            const loader = document.getElementById("loader");
+            loader.style.opacity = 0;
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 500);
+        }, 1200); // 1.2 soniya kechikish bilan yo'qoladi
+    });
+</script>
+</body>
+</html>

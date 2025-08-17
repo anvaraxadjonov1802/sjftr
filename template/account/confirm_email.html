@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uz">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emailni tasdiqlash</title>
+    <link rel="stylesheet" href="{% static 'account/style.css' %}">
+    <link rel="icon" href="{% static 'images/favicon_io/favicon.ico' %}">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="loader-wrapper" id="loader">
+        <span class="loader"></span>
+    </div>
+    <!-- Loader tugashi -->
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+
+    {% if messages %}
+    <div class="messages-wrapper">
+        {% for message in messages %}
+        <div class="alert {{ message.tags }}">
+            <span class="icon">⚠️</span>
+            <span class="text">{{ message }}</span>
+            <button class="close-btn" onclick="this.parentElement.style.display='none';">&times;</button>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="login-wrapper">
+        <!-- Illyustratsiya -->
+        <div class="illustration">
+            <img src="{% static 'account/images/confirm_email.png' %}" alt="Illyustratsiya">
+        </div>
+
+        <!-- Tasdiqlash formasi -->
+        <div class="login-container">
+            <h2>Emailni tasdiqlang</h2>
+            <p>Pochtangizga yuborilgan 6 xonali kodni kiriting:</p>
+
+            {% if error %}
+                <div class="error">{{ error }}</div>
+            {% endif %}
+
+            <form method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="id_code">Tasdiqlash kodi</label>
+                    <input type="text" name="code" id="id_code" maxlength="6" pattern="\d{6}" required>
+                </div>
+                <button class="login-btn" type="submit">Tasdiqlash</button>
+            </form>
+
+            <p style="margin-top: 15px; font-size: 14px;">
+                Kodni olmadingizmi? <a href="#" id="resend-link">Qayta yuborish</a>
+                <span id="resend-msg" style="display:block; color: green; margin-top:5px;"></span>
+            </p>
+
+        </div>
+    </div>
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(() => {
+                const loader = document.getElementById("loader");
+                loader.style.opacity = 0;
+                setTimeout(() => {
+                    loader.style.display = "none";
+                }, 500);
+            }, 1200); // 1.2 soniya kechikish bilan yo'qoladi
+        });
+    </script>
+    <script>
+        document.getElementById('resend-link').addEventListener('click', function (e) {
+            e.preventDefault();  // sahifa qayta yuklanmasin
+
+            fetch("{% url 'resend_code' %}", {
+                method: "GET",
+                headers: {
+                    "X-Requested-With": "XMLHttpRequest"
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                const msgEl = document.getElementById('resend-msg');
+                msgEl.style.color = data.success ? 'green' : 'red';
+                msgEl.textContent = data.message;
+            })
+            .catch(() => {
+                document.getElementById('resend-msg').textContent = "Xatolik yuz berdi!";
+            });
+        });
+    </script>
+
+</body>
+</html>

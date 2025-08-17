@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uz">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Natijasi</title>
+    <link rel="icon" href="{% static 'images/favicon_io/favicon.ico' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css  "/>
+
+    <style>
+        :root {
+            --primary: #32a6ff;
+            --dark-bg: #070256;
+            --gradient: linear-gradient(135deg, #2eadff, #3d83ff, #7e61ff);
+            --white: #ffffff;
+            --gray: #99999d;
+        }
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #090979;
+            background: radial-gradient(circle, rgba(9, 9, 121, 1) 60%, rgba(13, 13, 13, 1) 100%);
+            color: var(--white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .result-card {
+            position: relative;
+            background-color: #29292c;
+            border-radius: 20px;
+            padding: 40px 30px;
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+        }
+
+        .result-card::before {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            border-radius: 18px;
+            background: #18181b;
+            z-index: 1;
+        }
+
+        .result-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .result-title {
+            color: var(--primary);
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .result-score {
+            font-size: 20px;
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+
+        .result-message {
+            font-size: 16px;
+            color: var(--gray);
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--primary);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #1e90ff;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: var(--white);
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            z-index: 3;
+        }
+
+        .back-button svg {
+            margin-right: 8px;
+        }
+
+        @media (max-width: 500px) {
+            .result-card {
+                padding: 30px 20px;
+            }
+
+            .result-title {
+                font-size: 24px;
+            }
+
+            .result-score {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+<div class="result-card">
+    <div class="result-content">
+        <div class="result-title">Test yakunlandi!</div>
+        <div class="result-score">To'g'ri javoblar soni: <strong>{{ togri_savollar_soni }}/ {{ jami_savollar_soni }}</strong></div>
+        <div class="result-message">Foiz bo'yicha: {{ foiz }} %</div>
+        <div class="result-message">Natija: {{ grade }}</div>
+        <a href="{% url 'test' %}" class="button"><i class="fa-solid fa-arrows-rotate"></i> Yana test ishlash</a>
+    </div>
+</div>
+
+</body>
+
+</html>

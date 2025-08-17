@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="uz">
+{% load static %}
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SJ FTR | Ta'lim Platformasi</title>
+    {% block extra_link %}{% endblock %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css  "/>
+    <link rel="icon" href="{% static 'images/favicon_io/favicon.ico' %}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+{% if messages %}
+<div class="messages-wrapper">
+    {% for message in messages %}
+    <div class="alert {{ message.tags }}">
+        <span class="icon">⚠️</span>
+        <span class="text">{{ message }}</span>
+        <button class="close-btn" onclick="this.parentElement.style.display='none';">&times;</button>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+<!-- Navbar -->
+<div class="loader-wrapper" id="loader">
+    <span class="loader"></span>
+</div>
+<!-- Loader tugashi -->
+
+<nav>
+    <div class="nav-container">
+        <div class="logo">SJ - FTR</div>
+        <!--            <div class="btn-box">-->
+        <!--                <button class="btn-kirish">Kirish <i class="fa-solid fa-arrow-right-to-bracket"></i></button>-->
+        <!--            </div>-->
+        <div style="width: 6rem; display: flex; justify-content: space-between; align-items: center; ">
+            <a href="" class="btn-account" style="padding: 10px 11px; margin-left: 20px; border: 2px solid #FFFFFF; border-radius: 6px">
+                <i class="fa-regular fa-user"></i>
+            </a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="menu" id="nav-menu">
+            <a href="{% url 'dashboard' %}">Bosh sahifa</a>
+            <a href="{% url 'nazariy' %}">Nazariya</a>
+            <a href="{% url 'amaliy' %}">Amaliy</a>
+            <a href="{% url 'video' %}">Videolar</a>
+            <a href="{% url 'masala' %}">Topshiriqlar</a>
+            <a href="{% url 'test' %}">Testlar</a>
+
+            {% if request.user.is_authenticated %}
+
+            <a href="" class="btn-account" style="padding: 10px 11px; margin-left: 20px; border: 2px solid #FFFFFF; border-radius: 6px">
+                <i class="fa-regular fa-user"></i>
+            </a>
+            <a href="{% url 'log_out' %}">
+                <button class="btn-kirish">Chiqish <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+            </a>
+            {% else %}
+            <a href="{% url 'login' %}">
+                <button class="btn-kirish">Kirish <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+            </a>
+            <a href="{% url 'register' %}">
+                <button class="btn-kirish">Ro'yxatdan o'tish <i class="fa-solid fa-user-plus"></i></button>
+            </a>
+            {% endif %}
+        </div>
+
+
+    </div>
+</nav>
+
+<!-- Content -->
+<div class="main">
+    {% block content %}
+    {% endblock %}
+</div>
+
+<!-- Footer -->
+<hr>
+<footer>
+    <div class="row">
+        <div class="col">
+            <a href="{% url 'dashboard' %}"><img src="{% static 'main/images/logo.png' %}" alt=""></a>
+            <h3>
+                SJ - FTR
+            </h3>
+            <p>Bu yerdagi barcha materiallar geometriya faniga asoslangan.</p>
+            <div class="links">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="col">
+            <h3>Resurslar</h3>
+            <a href="{% url 'video' %}">Video materiallar</a>
+            <a href="{% url 'nazariy' %}">Nazariy materiallar</a>
+        </div>
+        <div class="col">
+            <h3>
+                Sahifalar
+            </h3>
+            <a href="{% url 'amaliy' %}">Amaliy bo'lim</a>
+            <a href="{% url 'test' %}">Testlar bo'limi</a>
+            <a href="{% url 'masala' %}">Masalalar bo'limi</a>
+            <a href="{% url 'video' %}">Media bo'lim</a>
+        </div>
+
+    </div>
+</footer>
+{% if not user.is_authenticated %}
+<style>
+/* Overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Yarim shaffof qora */
+  backdrop-filter: blur(6px); /* << Mana shu qismi fonga xira effekt beradi */
+  -webkit-backdrop-filter: blur(6px); /* Safari uchun qo‘llab-quvvatlash */
+  z-index: 9998;
+  display: none;
+}
+
+/* Modal box */
+.modal-box {
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 14px;
+  padding: 2.2rem;
+  width: 90%;
+  max-width: 430px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  z-index: 9999;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+/* Yopish belgi */
+.modal-close {
+  position: absolute;
+  top: 12px; right: 12px;
+  font-size: 1.4rem;
+  color: #6B7280;
+  cursor: pointer;
+}
+
+/* Sarlavha */
+.modal-box h2 {
+  font-size: 1.6rem;
+  color: #111827;
+  margin-bottom: 0.7rem;
+}
+
+/* Matn */
+.modal-box p {
+  color: #4B5563;
+  font-size: 1rem;
+  margin-bottom: 1.4rem;
+  line-height: 1.5;
+}
+
+/* Tugmalar */
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.modal-actions .btn {
+  padding: 0.6rem 1.3rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1e40af;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+}
+
+.btn-outline:hover {
+  background-color: #e0e7ff;
+}
+</style>
+
+<!-- Modal HTML -->
+<div id="authModal" class="modal-overlay">
+  <div class="modal-box">
+    <div class="modal-close" onclick="hideAuthModal()">×</div>
+    <h2>Salom!</h2>
+    <p>
+      Barcha materiallardan to'liq foydalana olish va kirish uchun roʻyxatdan oʻting yoki hisobingizga kiring. Bu tez va oson!
+    </p>
+    <div class="modal-actions">
+      <button class="btn btn-primary" onclick="window.location.href='{% url 'register' %}'">Ro'yxatdan o'tish</button>
+      <button class="btn btn-outline" onclick="window.location.href='{% url 'login' %}'">Kirish</button>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+function showAuthModal() {
+  document.getElementById("authModal").style.display = "block";
+}
+function hideAuthModal() {
+  document.getElementById("authModal").style.display = "none";
+}
+</script>
+
+{% endif %}
+
+
+{% block extra_js %}{% endblock %}
+</body>
+</html>

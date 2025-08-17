@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uz">
+{% load static %}
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{{ video.sarlavha }}</title>
+    <link rel="icon" href="{% static 'images/favicon_io/favicon.ico' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <style>
+        /* [Oldingi stylinglaringizni o‘zgartirmadim] */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #0f0f0f;
+            color: #ffffff;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 16px;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .back-button:hover {
+            background-color: #333333;
+        }
+
+        .back-button svg {
+            margin-right: 8px;
+        }
+
+        .video-player {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        .video-info {
+            margin-top: 20px;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #aaaaaa;
+            margin-bottom: 20px;
+        }
+
+        .meta span {
+            margin-right: 20px;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #dddddd;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            video {
+                height: auto;
+            }
+
+            .title {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Orqaga Tugmasi -->
+    <button class="back-button" onclick="history.back()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 24 24" width="18" fill="#fff">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+        </svg>
+        Orqaga
+    </button>
+
+    <!-- Video -->
+    <div class="video-player">
+        <video controls preload="auto">
+            <source src="{{ video.direct_video_url  }}" type="video/mp4">
+            Brauzeringiz video formatini qo‘llab-quvvatlamaydi.
+        </video>
+    </div>
+
+
+
+    <!-- Ma'lumotlar -->
+    <div class="video-info">
+        <h1 class="title">{{ video.sarlavha }}</h1>
+        <div class="meta">
+            <span>📅 {{ video.yakunlangan_vaqt }}</span>
+            <span>⏱️ {{ video.duration_minutes }} min</span>
+            <!--            <span>👁️ {{ video.views }} views</span>-->
+        </div>
+        {% if video.description %}
+        <p class="description">{{ video.description }}</p>
+        {% endif %}
+    </div>
+</div>
+</body>
+</html>

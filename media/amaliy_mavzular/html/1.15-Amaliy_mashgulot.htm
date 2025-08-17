@@ -1,0 +1,569 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:Georgia;
+	panose-1:2 4 5 2 5 4 5 2 3 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;}
+h1
+	{mso-style-link:"Заголовок 1 Знак";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Заголовок 2 Знак";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Заголовок 3 Знак";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h4
+	{mso-style-link:"Заголовок 4 Знак";
+	margin-top:4.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;
+	font-style:italic;}
+h5
+	{mso-style-link:"Заголовок 5 Знак";
+	margin-top:4.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h6
+	{mso-style-link:"Заголовок 6 Знак";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#595959;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Заголовок 7 Знак";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#595959;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Заголовок 8 Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#272727;
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Заголовок 9 Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#272727;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Название Знак";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Название Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Название Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Название Знак";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Подзаголовок Знак";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#595959;
+	letter-spacing:.75pt;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{mso-style-link:"Цитата 2 Знак";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;
+	color:#404040;
+	font-style:italic;}
+p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
+	{mso-style-link:"Выделенная цитата Знак";
+	margin-top:18.0pt;
+	margin-right:43.2pt;
+	margin-bottom:18.0pt;
+	margin-left:43.2pt;
+	text-align:center;
+	border:none;
+	padding:0cm;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;
+	color:#2E74B5;
+	font-style:italic;}
+span.MsoIntenseEmphasis
+	{color:#2E74B5;
+	font-style:italic;}
+span.MsoIntenseReference
+	{font-variant:small-caps;
+	color:#2E74B5;
+	letter-spacing:.25pt;
+	font-weight:bold;}
+span.1
+	{mso-style-name:"Заголовок 1 Знак";
+	mso-style-link:"Заголовок 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;}
+span.2
+	{mso-style-name:"Заголовок 2 Знак";
+	mso-style-link:"Заголовок 2";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;}
+span.3
+	{mso-style-name:"Заголовок 3 Знак";
+	mso-style-link:"Заголовок 3";
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;}
+span.4
+	{mso-style-name:"Заголовок 4 Знак";
+	mso-style-link:"Заголовок 4";
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;
+	font-style:italic;}
+span.5
+	{mso-style-name:"Заголовок 5 Знак";
+	mso-style-link:"Заголовок 5";
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;}
+span.6
+	{mso-style-name:"Заголовок 6 Знак";
+	mso-style-link:"Заголовок 6";
+	font-family:"Calibri",sans-serif;
+	color:#595959;
+	font-style:italic;}
+span.7
+	{mso-style-name:"Заголовок 7 Знак";
+	mso-style-link:"Заголовок 7";
+	font-family:"Calibri",sans-serif;
+	color:#595959;}
+span.8
+	{mso-style-name:"Заголовок 8 Знак";
+	mso-style-link:"Заголовок 8";
+	font-family:"Calibri",sans-serif;
+	color:#272727;
+	font-style:italic;}
+span.9
+	{mso-style-name:"Заголовок 9 Знак";
+	mso-style-link:"Заголовок 9";
+	font-family:"Calibri",sans-serif;
+	color:#272727;}
+span.a
+	{mso-style-name:"Название Знак";
+	mso-style-link:Название;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+span.a0
+	{mso-style-name:"Подзаголовок Знак";
+	mso-style-link:Подзаголовок;
+	font-family:"Calibri",sans-serif;
+	color:#595959;
+	letter-spacing:.75pt;}
+span.20
+	{mso-style-name:"Цитата 2 Знак";
+	mso-style-link:"Цитата 2";
+	color:#404040;
+	font-style:italic;}
+span.a1
+	{mso-style-name:"Выделенная цитата Знак";
+	mso-style-link:"Выделенная цитата";
+	color:#2E74B5;
+	font-style:italic;}
+span.VerbatimChar
+	{mso-style-name:"Verbatim Char";
+	font-family:Consolas;}
+.MsoChpDefault
+	{font-size:14.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=RU>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;text-indent:49.65pt;line-height:115%'><b><span lang=EN-US
+style='line-height:115%'>12. Sfera va shar. Shar va tekislikning o'zaro
+joylashuvi. Ikki sfera kesishmasi. Sfera sirti. Shar bo'laklari va ularning
+sirtlari</span></b></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:center;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><b><span lang=EN-US
+style='line-height:115%'>Mustaqil ishlash uchun masalalar</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.27. Sharning sirt yuzi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=42 height=24
+src="1.15-Amaliy%20mashg'ulot.files/image001.png"></span><span lang=EN-US
+style='line-height:115%'> ga teng bo'lsa, sharning diametrini toping. javob: 17
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.28. Sharning sirti 393 ga teng. Berilgan shar
+radiusidan </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=22 height=26
+src="1.15-Amaliy%20mashg'ulot.files/image002.png"></span><span lang=EN-US
+style='line-height:115%'> marta kichik radiusli shar sirti yuzini toping.
+javob: 131 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.29. Sharning kesimi shar markazidan </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:13.0pt'><img width=30 height=47
+src="1.15-Amaliy%20mashg'ulot.files/image003.png"></span><span lang=EN-US
+style='line-height:115%'> ga teng masofada, shar kesim yuzi 15 ga teng bo'lsa,
+shar sirti yuzini toping. javob: 180 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.30. Shar radiusi oxiridan radius bilan </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.15-Amaliy%20mashg'ulot.files/image004.png"></span><span lang=EN-US
+style='line-height:115%'> burchak tashkil qiluvchi tekislik o'tkazilgan. Agar
+sharning sirti yuzi 125 ga teng bo'lsa, kesim yuzini toping. javob: 15,625 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.31. Shar kesim yuzi sharning sirti yuzidan 8 marta
+kichik. Agar sharning radiusi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=43 height=26
+src="1.15-Amaliy%20mashg'ulot.files/image005.png"></span><span lang=EN-US
+style='line-height:115%'> ga teng bo‘lsa, shar markazidan kesim yuzigacha
+bo‘lgan masofani toping. javob: 11</span><span lang=EN-US style='line-height:
+115%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.32. Sharning kesimi shar radiusiga perpendikular
+holatida radiusni </span><span style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;position:
+relative;top:4.5pt'><img width=29 height=24
+src="1.15-Amaliy%20mashg'ulot.files/image006.png"></span><span lang=EN-US
+style='line-height:115%'> (markazdan hisoblaganda) nisbatda bo‘ladi. Sharning
+sirti yuzi 96 ga teng bo‘lsa, kesim yuzini toping. javob: 22,5</span><span
+lang=EN-US style='line-height:115%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.33. Sharning kesimi shar radiusiga perpendikular
+holatida radiusni </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=29 height=24
+src="1.15-Amaliy%20mashg'ulot.files/image007.png"></span><span lang=EN-US
+style='line-height:115%'> (markazdan hisoblaganda) nisbatda bo‘ladi. Agar kesim
+yuzi 2,1 ga teng bo‘lsa, sharning sirti yuzini toping. javob: 15,12</span><span
+lang=EN-US style='line-height:115%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.34. Shar markazidan </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:13.0pt'><img width=30 height=47
+src="1.15-Amaliy%20mashg'ulot.files/image008.png"></span><span lang=EN-US
+style='line-height:115%'> masofada o'tkazilgan shar kesimi yuzini toping, bunda
+sharning sirti yuzi 78 ga tengligi ma'lum. javob: 9,5 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.35. Sharning radiusi oxiridan radius bilan </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.15-Amaliy%20mashg'ulot.files/image009.png"></span><span lang=EN-US
+style='line-height:115%'> hosil qiluvchi kesim o'tkazilingan. Hosil bo'lgan
+kesim yuzi 11 ga teng bo'lsa, sharning sirti yuzini toping. javob: 176 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.36. Radiusi 13 ga teng bo'lgan shar sirtiga
+diagonallari 30 va 40 ga teng bo‘lgan romb tomonlari urinadi. Romb tekisligidan
+shar markazigacha bo‘lgan masofani aniqlang.</span><span lang=EN-US
+style='line-height:115%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.37. Tomoni 12,5 ga teng bo'lgan romb shar sirtiga
+urinadi. Sharning radiusi 10 ga teng. Romb tekisligi va shar markazi orasidagi
+masofa 8 ga teng bo'lsa, rombning yuzini toping. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.38. Radiusi 1 dm bo'lgan shar rombning barcha
+tomonlariga urinadi. Agar romb diagonallarining uzunliklari 15 sm va 2 dm
+bo‘lsa, sharning markazidan romb tekisligigacha bo‘lgan masofa topilsin.</span><span
+lang=EN-US style='line-height:115%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.39. Trapetsiyaning asoslari 6 dm va 48 sm ,
+balandligi 10 sm . Shu teng yonli trapetsiyaning uchlaridan o'tuvchi sharning
+markazi trapetsiya tekisligidan 6 dm uzoqlikda bo‘lsa, shar radiusining
+uzunligi topilsin.</span><span lang=EN-US style='line-height:115%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.40. Radiusi 15 sm bo‘lgan shar teng yonli
+trapetsiyaning barcha tomonlariga urinadi. Trapetsiyaning asoslari 16 sm va 36
+sm bo‘lsa, sharning markazidan trapetsiya tekisligigacha bo'lgan masofa
+topilsin. javob: 9</span><span lang=EN-US style='line-height:115%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.41. Radiusi 17 sm bo‘lgan shar markazidan 8 sm
+masofada tekislik bilan kesilgan. Kesimning yuzini toping.</span><span
+lang=EN-US style='line-height:115%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.42. Shar katta doirasining yuzi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=42 height=24
+src="1.15-Amaliy%20mashg'ulot.files/image010.png"></span><span lang=EN-US
+style='line-height:115%'> ga teng. Sharning markazidan qanday masofada
+o'tkazilgan tekislik shardan doirasining yuzi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=42 height=24
+src="1.15-Amaliy%20mashg'ulot.files/image011.png"></span><span lang=EN-US
+style='line-height:115%'> ga teng bo‘lgan kesim hosil qiladi. javob: </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=43 height=26
+src="1.15-Amaliy%20mashg'ulot.files/image012.png"></span><span
+style='line-height:115%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.43. Shar katta doirasining yuzi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=32 height=24
+src="1.15-Amaliy%20mashg'ulot.files/image013.png"></span><span lang=EN-US
+style='line-height:115%'> ga teng. Sharning markazidan qanday masofada
+o'tkazilgan tekislik shardan doirasining yuzi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=57 height=24
+src="1.15-Amaliy%20mashg'ulot.files/image014.png"></span><span lang=EN-US
+style='line-height:115%'> ga teng bo'lgan kesim ajratadi? </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.44. Shar katta doirasining yuzi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=32 height=24
+src="1.15-Amaliy%20mashg'ulot.files/image013.png"></span><span lang=EN-US
+style='line-height:115%'> ga teng. Sharning markazidan qanday masofada
+o'tkazilgan tekislik shardan doirasining yuzi </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=22 height=24
+src="1.15-Amaliy%20mashg'ulot.files/image015.png"></span><span lang=EN-US
+style='line-height:115%'> ga teng kesim ajratadi? javob: 4 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.45. Shar radiusi 6 ga teng. Radius uchidan u bilan </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.15-Amaliy%20mashg'ulot.files/image016.png"></span><span lang=EN-US
+style='line-height:115%'> burchak tashkil qiluvchi tekislik o'tkazilgan. Shar
+bilan tekislik hosil qilgan kesimning yuzini toping. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.46. Radiusi 13 ga teng bo'lgan shar tekislik bilan
+kesilgan. Agar shar markazidan kesimgacha masofa 10 ga teng bo‘lsa, kesimning
+yuzini toping. javob: </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=32 height=24
+src="1.15-Amaliy%20mashg'ulot.files/image017.png"></span><span
+style='line-height:115%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.47. Radiusining oxiridan u bilan </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.15-Amaliy%20mashg'ulot.files/image009.png"></span><span lang=EN-US
+style='line-height:115%'> li burchak tashkil etadigan kesuvchi tekislik
+o'tkazilgan. Kesimning yuzini toping. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.48. </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=13 height=24
+src="1.15-Amaliy%20mashg'ulot.files/image018.png"></span><span lang=EN-US
+style='line-height:115%'> radiusli sharning radiusi uchidan o'tkazilgan
+tekislik shu radius bilan </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:4.5pt'><img width=27 height=24
+src="1.15-Amaliy%20mashg'ulot.files/image009.png"></span><span lang=EN-US
+style='line-height:115%'> li burchak tashkil qiladi. Hosil qilingan kesimning
+yuzi hisoblansin. javob: </span><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+position:relative;top:8.5pt'><img width=25 height=36
+src="1.15-Amaliy%20mashg'ulot.files/image019.png"></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:115%'><span lang=EN-US
+style='line-height:115%'>12.49. Sharning radiusi 10 ga teng. Agar sharni
+tekislik bilan kesganda hosil bo‘lgan kesimning yuzi 36</span><span
+style='line-height:115%'>&#960;</span><span lang=EN-US style='line-height:115%'>
+ga teng bo‘lsa, sharga mos sferaning sirti qanday yuzli qismlarga bo‘linadi?</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:115%'><span
+lang=EN-US style='line-height:115%'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
