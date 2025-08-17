@@ -4,11 +4,11 @@ Bu loyiha — o‘zbek tilida yaratilgan zamonaviy va interaktiv onlayn ta’lim
 
 ## 🚀 Asosiy Funksiyalar
 
-* 📚 **Nazariy bo‘lim** — Har bir dars maqola va kod misollari bilan.
-* 💻 **Amaliy mashqlar** — VBA, Python, Excel va boshqa yo‘nalishlarda real topshiriqlar.
+* 📚 **Nazariy bo‘lim** — Har bir dars Geometriya fani bo'yicha.
+* 💻 **Amaliy mashqlar** — Geometriya fani bo'yicha real topshiriqlar.
 * 📹 **Video darslar** — YouTube yoki Google Drive orqali ulangan video kontentlar.
 * 🧐 **Test moduli** — Har bir mavzuga mos avtomatlashtirilgan testlar.
-* 📂 **Topshiriqlar** — Foydalanuvchi topshiriqni yuklab oladi, bajargan faylini yuklaydi.
+* 📂 **Topshiriqlar** — Foydalanuvchi topshiriqni yuklab olishlari mumkun.
 * ✅ **Foydalanuvchi autentifikatsiyasi** — Ro'yxatdan o'tish, email orqali tasdiqlash, login/logout.
 * ⚙️ **Admin panel** — To‘liq boshqaruv: foydalanuvchilar, darslar, videolar, testlar, topshiriqlar.
 * 🌐 **Responsive dizayn** — Mobil qurilmalar uchun moslashtirilgan interfeys.
@@ -17,10 +17,9 @@ Bu loyiha — o‘zbek tilida yaratilgan zamonaviy va interaktiv onlayn ta’lim
 
 * **Backend:** Django (Python)
 * **Frontend:** HTML, CSS, Bootstrap (va JS imkoniyatlari)
-* **Database:** PostgreSQL / SQLite
+* **Database:** SQLite
 * **Storage:** Google Drive (video fayllar uchun)
 * **Email xizmati:** Django email backend orqali OTP / ro'yxatdan o'tish
-* **PDF generator:** WeasyPrint
 
 ## 🖼 Dizayn
 
